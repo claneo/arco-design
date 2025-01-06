@@ -292,9 +292,14 @@
       color: @ellipsis-action-text-color;
       margin: 0 4px;
       cursor: pointer;
+      transition: all @transition-duration-1 @transition-timing-function-linear;
 
       &:hover {
         color: @ellipsis-action-text-color_hover;
+      }
+
+      &:active {
+        color: @ellipsis-action-text-color_active;
       }
 
       //&:focus-visible {
